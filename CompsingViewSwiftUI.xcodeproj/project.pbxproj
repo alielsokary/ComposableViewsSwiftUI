@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		739891467BD00744265FA290 /* Pods_CompsingViewSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B734ECC70FA15D1E580B4AC9 /* Pods_CompsingViewSwiftUI.framework */; };
 		CE87A403277853F00062117B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87A402277853F00062117B /* AppDelegate.swift */; };
 		CE87A405277853F00062117B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87A404277853F00062117B /* SceneDelegate.swift */; };
 		CE87A407277853F00062117B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87A406277853F00062117B /* ViewController.swift */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B734ECC70FA15D1E580B4AC9 /* Pods_CompsingViewSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CompsingViewSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C65E2E6D7F66FFD40E3ED079 /* Pods-CompsingViewSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompsingViewSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-CompsingViewSwiftUI/Pods-CompsingViewSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		CE87A3FF277853F00062117B /* CompsingViewSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompsingViewSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE87A402277853F00062117B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE87A404277853F00062117B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		CE87A43527788C730062117B /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		CE87A43827789D520062117B /* ColorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStyle.swift; sourceTree = "<group>"; };
 		CE87A43C2778A7420062117B /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		D2DABEF8AEC8EA5764C32DCF /* Pods-CompsingViewSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompsingViewSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-CompsingViewSwiftUI/Pods-CompsingViewSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +59,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739891467BD00744265FA290 /* Pods_CompsingViewSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F7BB0A8F439C247A7E0D6D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B734ECC70FA15D1E580B4AC9 /* Pods_CompsingViewSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE87A3F6277853F00062117B = {
 			isa = PBXGroup;
 			children = (
 				CE87A401277853F00062117B /* CompsingViewSwiftUI */,
 				CE87A400277853F00062117B /* Products */,
+				D050633C0909E24C2AC663FD /* Pods */,
+				3F7BB0A8F439C247A7E0D6D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +198,16 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
+		D050633C0909E24C2AC663FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C65E2E6D7F66FFD40E3ED079 /* Pods-CompsingViewSwiftUI.debug.xcconfig */,
+				D2DABEF8AEC8EA5764C32DCF /* Pods-CompsingViewSwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE87A413277853F30062117B /* Build configuration list for PBXNativeTarget "CompsingViewSwiftUI" */;
 			buildPhases = (
+				8F86587ADAD1B3D6D1D7CC34 /* [CP] Check Pods Manifest.lock */,
 				CE87A3FB277853F00062117B /* Sources */,
 				CE87A3FC277853F00062117B /* Frameworks */,
 				CE87A3FD277853F00062117B /* Resources */,
+				3E6B06DEA552833BD2D904E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E6B06DEA552833BD2D904E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CompsingViewSwiftUI/Pods-CompsingViewSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CompsingViewSwiftUI/Pods-CompsingViewSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CompsingViewSwiftUI/Pods-CompsingViewSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F86587ADAD1B3D6D1D7CC34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CompsingViewSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE87A3FB277853F00062117B /* Sources */ = {
@@ -412,6 +481,7 @@
 		};
 		CE87A414277853F30062117B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65E2E6D7F66FFD40E3ED079 /* Pods-CompsingViewSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +510,7 @@
 		};
 		CE87A415277853F30062117B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2DABEF8AEC8EA5764C32DCF /* Pods-CompsingViewSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

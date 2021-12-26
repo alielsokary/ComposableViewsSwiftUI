@@ -14,10 +14,9 @@ struct InputView: View {
         let helperText = "Hey there, my name is helper text. I’m here to help you."
         VStack(alignment: .leading, spacing: 8) {
             TextView(text: text)
-            TextFieldView(placeHolder: textFieldPlaceholder)
+            TextFieldView(placeHolder: textFieldPlaceholder, borderColor: ColorStyle.textcolor04())
             TextViewHelper(text: helperText)
         }
-        .padding([.leading, .trailing], 8)
     }
 }
 

@@ -7,21 +7,29 @@
 
 import UIKit
 import SwiftUI
+import TinyConstraints
 
 class ViewController: UIViewController {
 
-    let InputView = UIHostingController(rootView: InputViewWithAlert())
+    let viewInputonecontainer = UIHostingController(rootView: InputView())
+    let viewInputtwocontainer = UIHostingController(rootView: InputViewWithAlert())
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        addChild(InputView)
-        view.addSubview(InputView.view)
-        InputView.view.translatesAutoresizingMaskIntoConstraints = false
-        InputView.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        InputView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        InputView.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        InputView.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        placeView(viewInputonecontainer)
+        placeView(viewInputtwocontainer)
+        
+        viewInputonecontainer.view.topToSuperview(offset: 20, usingSafeArea: true)
+        viewInputtwocontainer.view.topToBottom(of: viewInputonecontainer.view, offset: 20)
     }
-
 
 }
 
+extension ViewController {
+    func placeView<T>(_ containerView: UIHostingController<T>) {
+        addChild(containerView)
+        view.addSubview(containerView.view)
+        containerView.view.leftToSuperview(offset: 8, usingSafeArea: true)
+        containerView.view.rightToSuperview(offset: -8, usingSafeArea: true)
+    }
+}

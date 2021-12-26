@@ -14,7 +14,6 @@ struct InputViewWithAlert: View {
         VStack(alignment: .leading) {
             InputView()
             TextViewWithIcon(text: alertText, icon: icon)
-            .padding([.leading, .trailing], 8)
         }
     }
 }

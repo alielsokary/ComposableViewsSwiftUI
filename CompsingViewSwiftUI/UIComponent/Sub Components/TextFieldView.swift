@@ -10,7 +10,7 @@ import SwiftUI
 struct TextFieldView: View {
     @State private var name: String = ""
     let placeHolder: String
-    let borderColor = ColorStyle.primaryred()
+    let borderColor: String
     var body: some View {
         TextField(placeHolder, text: $name)
             .padding()
@@ -21,6 +21,6 @@ struct TextFieldView: View {
 
 struct TextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        TextFieldView(placeHolder: "Select an option")
+        TextFieldView(placeHolder: "Select an option", borderColor: ColorStyle.primaryred())
     }
 }

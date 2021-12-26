@@ -12,9 +12,9 @@ enum ColorStyle: String {
     case primaryred = "primary-red"
     case uibackground = "ui-background"
     case uiborder = "ui-border"
-    case textcolor01 = "text-color-01"
-    case textcolor02 = "text-color-02"
-    case textcolor04 = "text-color-04"
+    case textcolor01 = "text-color-1"
+    case textcolor02 = "text-color-2"
+    case textcolor04 = "text-color-4"
     case errortextcolor = "error-text-color"
     
     
